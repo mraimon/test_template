@@ -1,0 +1,116 @@
+@media screen and (max-width: 800px) {
+	.team {
+		-webkit-box-flex: 1 !important;
+		-ms-flex-positive: 1 !important;
+		flex-grow: 1 !important;
+	}
+	.widget {
+		margin: 15px 30px;
+	}
+	#project-info button {
+		float: right;
+		margin: 10px 0 0 10px;
+	}
+	.btn__title {
+		display: none;
+	}
+	.btn-sm {
+		min-width: 45px;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.row {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.row .col {
+		-ms-flex-preferred-size: auto;
+		flex-basis: auto;
+	}
+	.row-wrap .col {
+		-ms-flex-preferred-size: auto;
+		flex-basis: auto;
+	}
+	#user-menu {
+		padding: 15px 0;
+	}
+	#project-info {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#sidebar {
+		height: 60px;
+		overflow: hidden;
+		padding: 0 !important;
+	}
+	.nav-menu {
+		height: 80px;
+		white-space: nowrap;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		margin: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-align: baseline;
+		-ms-flex-align: baseline;
+		align-items: baseline;
+	}
+	.nav-menu li{
+		padding: 20px 10px;
+	}
+	.count {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+	.activity-event, .activity-info {
+		flex-direction: column;
+	}
+	.activity-info {
+		margin: 0;
+		padding-top: 0;
+	}
+	.activity-type {
+		border-bottom: none;
+		flex-basis: auto !important;
+		margin: 0;
+		text-align: left;
+		padding-bottom: 0;
+	}
+
+	.activity-type-name::before {
+		display: inline-block;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 20px;
+		padding-right: 10px;
+	}
+
+	.project-info__header_icon,
+	.project-info__header__title{
+		font-size: 20px;
+	}
+
+	.btn-project-info {
+		background: none;
+		color: #30333a;
+	}
+
+	.btn-project-info {
+		padding: 5px;
+	}
+	.btn-project-info .btn__icon {
+		font-size: 15px;
+	}
+}
